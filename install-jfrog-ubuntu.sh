@@ -25,7 +25,7 @@ echo "*****Downloading JFROG Artifactory 6.23.42 version"
 sudo systemctl stop artifactory > /dev/null 2>&1
 cd /opt 
 sudo rm -rf jfrog* artifactory*
-sudo wget -q https://jfrog.bintray.com/artifactory/jfrog-artifactory-oss-6.23.42.zip
+sudo wget -q https://jfrog.com/community/open-source/jfrog-artifactory-oss-6.23.42.zip
 sudo unzip -q jfrog-artifactory-oss-6.23.42.zip -d /opt/artifactory 1>/dev/null
 sudo chown -R artifactory: /opt/artifactory/*
 sudo rm -rf jfrog-artifactory-oss-6.23.42.zip
